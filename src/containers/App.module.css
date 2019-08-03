@@ -1,0 +1,9 @@
+.app_wrapper{
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 40px);
+  width: calc(100vw - 40px);
+  background: rgb(224, 224, 224);
+  padding: 20px;
+  flex-wrap: wrap;
+}
