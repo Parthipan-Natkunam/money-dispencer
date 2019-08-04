@@ -1,0 +1,13 @@
+.nodata_wrapper{
+  flex: 2;
+  margin: 10px 16px;
+  padding: 8px;
+  justify-content: center;
+  align-content: center;
+  color: #979797;
+  user-select: none;
+}
+
+h5{
+  text-align: center;
+}
