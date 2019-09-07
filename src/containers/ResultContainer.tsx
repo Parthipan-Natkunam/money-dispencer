@@ -19,7 +19,16 @@ class ResultContainer extends React.PureComponent<any, any>{
           <hr />
           <div className={style.notedetail_wrapper}>
             {notesArr.map((item: resultObject, index: number) => {
-              return (<NoteDetail key={`${index}_note_${item.note}`} data={item} />);
+              if(index%2!==0){
+                return (
+                  <>
+                    <NoteDetail key={`${index}_note_${item.note}`} data={item} />
+                    <hr className={style.soft_innerline}/>
+                  </>
+                );
+              }else{
+                return (<NoteDetail key={`${index}_note_${item.note}`} data={item} />);
+              }
             })}
           </div>
           <TotalCount count={count} />

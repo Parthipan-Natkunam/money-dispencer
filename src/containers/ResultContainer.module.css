@@ -15,6 +15,13 @@ hr{
   background: #ccc;
 }
 
+hr.soft_innerline{
+  height: 0.2px;
+  border: 0.2px solid rgba(97, 97, 97, 0.4);
+  background: rgba(97, 97, 97, 0.4);
+  flex: 0 0 100%;
+}
+
 .notedetail_wrapper{
   display: flex;
   flex-wrap: wrap;
