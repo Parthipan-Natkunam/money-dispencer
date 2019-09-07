@@ -21,10 +21,10 @@ class ResultContainer extends React.PureComponent<any, any>{
             {notesArr.map((item: resultObject, index: number) => {
               if(index%2!==0){
                 return (
-                  <>
+                  <React.Fragment key={`${index}_fragment_${item.note}`}>
                     <NoteDetail key={`${index}_note_${item.note}`} data={item} />
-                    <hr className={style.soft_innerline}/>
-                  </>
+                    <hr key={`${index}_line_${item.note}`} className={style.soft_innerline}/>
+                  </React.Fragment>
                 );
               }else{
                 return (<NoteDetail key={`${index}_note_${item.note}`} data={item} />);
